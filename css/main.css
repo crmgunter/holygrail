@@ -16,20 +16,6 @@ header {
 
 }
 
-nav {
-    background-color: beige;
-    width: 25%;
-}
-
-main {
-    width: 50%;
-}
-
-aside {
-    background-color: beige;
-    width: 25%;
-}
-
 div {
     width: 100%;
     display: flex;
@@ -37,9 +23,33 @@ div {
     flex-grow: 1;	
 }
 
+
+
+nav {
+    background-color: beige;
+    flex: 1;
+}
+
+main {
+    flex: 3;
+}
+
+aside {
+    background-color: beige;
+    flex: 1;
+}
+
 footer {
     background-color: black;
     height: 25px;
     width: 100%;
     color: white;
+}
+
+@media (max-width: 600px) {
+    div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
 }
